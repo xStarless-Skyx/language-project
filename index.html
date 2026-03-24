@@ -1,0 +1,274 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Programming Languages Shaped Modern Software Development</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Spring 2026 Multigenre Research Project</p>
+      <h1>How Programming Languages Shaped Modern Software Development</h1>
+      <p class="subtitle">
+        A timeline of seven programming languages, what each one changed,
+        and a simple demo showing the kind of work it made possible.
+      </p>
+      <a class="cta" id="start-timeline" href="#timeline">Start the Timeline</a>
+    </div>
+  </header>
+
+  <nav class="top-nav">
+    <a href="#fortran">FORTRAN</a>
+    <a href="#lisp">LISP</a>
+    <a href="#cobol">COBOL</a>
+    <a href="#c">C</a>
+    <a href="#python">Python</a>
+    <a href="#javascript">JavaScript</a>
+    <a href="#rust">Rust</a>
+    <a href="#works-cited">Works Cited</a>
+  </nav>
+
+  <button id="next-section" class="next-btn is-hidden" type="button" aria-label="Next section">
+    Next
+  </button>
+
+  <main id="timeline" class="timeline">
+    <section id="fortran" class="card">
+      <div class="card-header">
+        <span class="year">1957</span>
+        <h2>FORTRAN</h2>
+      </div>
+      <p>
+        FORTRAN helped make scientific and mathematical programming more practical by letting
+        programmers work with formulas instead of only low-level machine instructions.
+      </p>
+      <p class="inventor">Inventor: John Backus (IBM).</p>
+
+      <div class="demo-inputs">
+        <label>Mass (kg)
+          <input id="fortran-mass" type="number" value="10" />
+        </label>
+        <label>Acceleration (m/s²)
+          <input id="fortran-accel" type="number" value="3" />
+        </label>
+        <button onclick="runFortranDemo()">Run Demo</button>
+      </div>
+
+      <div class="demo-grid">
+        <div class="panel">
+          <h3>Sample FORTRAN Code</h3>
+          <pre id="fortran-code" class="code big-code"></pre>
+        </div>
+        <div class="panel output-panel is-hidden">
+          <h3>Output</h3>
+          <pre id="fortran-output" class="output big-output"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="lisp" class="card">
+      <div class="card-header">
+        <span class="year">1958</span>
+        <h2>LISP</h2>
+      </div>
+      <p>
+        LISP shaped symbolic processing and artificial intelligence by representing operations
+        as expressions built from lists.
+      </p>
+      <p class="inventor">Inventor: John McCarthy (MIT).</p>
+
+      <div class="demo-inputs">
+        <label>Expression
+          <input id="lisp-input" type="text" value="(+ 2 3 4)" />
+        </label>
+        <button onclick="runLispDemo()">Run Demo</button>
+      </div>
+
+      <div class="demo-grid">
+        <div class="panel">
+          <h3>Sample LISP Code</h3>
+          <pre id="lisp-code" class="code big-code"></pre>
+        </div>
+        <div class="panel output-panel is-hidden">
+          <h3>Output</h3>
+          <pre id="lisp-output" class="output big-output"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="cobol" class="card">
+      <div class="card-header">
+        <span class="year">1959</span>
+        <h2>COBOL</h2>
+      </div>
+      <p>
+        COBOL helped bring computing into business by using a readable, English-like style
+        for records, payroll, and reports.
+      </p>
+      <p class="inventor">Inventor: Grace Hopper and the CODASYL committee.</p>
+
+      <div class="demo-inputs">
+        <label>Hours Worked
+          <input id="cobol-hours" type="number" value="40" />
+        </label>
+        <label>Hourly Rate
+          <input id="cobol-rate" type="number" value="18.5" step="0.01" />
+        </label>
+        <button onclick="runCobolDemo()">Run Demo</button>
+      </div>
+
+      <div class="demo-grid">
+        <div class="panel">
+          <h3>Sample COBOL Code</h3>
+          <pre id="cobol-code" class="code big-code"></pre>
+        </div>
+        <div class="panel output-panel is-hidden">
+          <h3>Output</h3>
+          <pre id="cobol-output" class="output big-output"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="c" class="card">
+      <div class="card-header">
+        <span class="year">1972</span>
+        <h2>C</h2>
+      </div>
+      <p>
+        C shaped systems programming by combining speed, portability, and low-level control.
+      </p>
+      <p class="inventor">Inventor: Dennis Ritchie (Bell Labs).</p>
+
+      <div class="demo-inputs">
+        <label>Numbers (comma separated)
+          <input id="c-input" type="text" value="9, 3, 7, 1, 5" />
+        </label>
+        <button onclick="runCDemo()">Run Demo</button>
+      </div>
+
+      <div class="demo-grid">
+        <div class="panel">
+          <h3>Sample C Code</h3>
+          <pre id="c-code" class="code big-code"></pre>
+        </div>
+        <div class="panel output-panel is-hidden">
+          <h3>Output</h3>
+          <pre id="c-output" class="output big-output"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="python" class="card">
+      <div class="card-header">
+        <span class="year">1991</span>
+        <h2>Python</h2>
+      </div>
+      <p>
+        Python made software development more readable and productive, which helped it grow
+        in education, automation, data science, and everyday programming.
+      </p>
+      <p class="inventor">Inventor: Guido van Rossum.</p>
+
+      <div class="demo-inputs">
+        <label>Paste Text
+          <textarea id="python-input" rows="5">Python makes code easier to read and write.</textarea>
+        </label>
+        <button onclick="runPythonDemo()">Run Demo</button>
+      </div>
+
+      <div class="demo-grid">
+        <div class="panel">
+          <h3>Sample Python Code</h3>
+          <pre id="python-code" class="code big-code"></pre>
+        </div>
+        <div class="panel output-panel is-hidden">
+          <h3>Output</h3>
+          <pre id="python-output" class="output big-output"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="javascript" class="card">
+      <div class="card-header">
+        <span class="year">1995</span>
+        <h2>JavaScript</h2>
+      </div>
+      <p>
+        JavaScript turned the web into an interactive software platform by powering dynamic
+        changes directly inside the browser.
+      </p>
+      <p class="inventor">Inventor: Brendan Eich.</p>
+
+      <div class="demo-inputs">
+        <div class="counter-wrap">
+          <button onclick="changeJsCounter(-1)">-</button>
+          <span id="js-counter">0</span>
+          <button onclick="changeJsCounter(1)">+</button>
+        </div>
+      </div>
+
+      <div class="demo-grid">
+        <div class="panel">
+          <h3>Sample JavaScript Code</h3>
+          <pre id="javascript-code" class="code big-code"></pre>
+        </div>
+        <div class="panel output-panel is-hidden">
+          <h3>Output</h3>
+          <pre id="javascript-output" class="output big-output"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="rust" class="card">
+      <div class="card-header">
+        <span class="year">2015</span>
+        <h2>Rust</h2>
+      </div>
+      <p>
+        Rust helped modern software focus on both speed and safety, especially in systems
+        programming and WebAssembly-based development.
+      </p>
+      <p class="inventor">Inventor: Graydon Hoare.</p>
+
+      <div class="demo-inputs">
+        <label>How many steps?
+          <input id="rust-steps" type="number" value="5" min="1" max="20" />
+        </label>
+        <button onclick="runRustDemo()">Run Demo</button>
+      </div>
+
+      <div class="demo-grid">
+        <div class="panel">
+          <h3>Sample Rust Code</h3>
+          <pre id="rust-code" class="code big-code"></pre>
+        </div>
+        <div class="panel output-panel is-hidden">
+          <h3>Output</h3>
+          <pre id="rust-output" class="output big-output"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="works-cited" class="card">
+      <div class="card-header">
+        <span class="year">Sources</span>
+        <h2>Works Cited</h2>
+      </div>
+      <div class="works-cited">
+        <p>“C and C++.” <em>Funk &amp; Wagnalls New World Encyclopedia</em>, Jan. 2018, p. 1. <em>EBSCOhost</em>.</p>
+        <p>Computer History Museum. “Software &amp; Languages.” <em>Timeline of Computer History</em>, Computer History Museum. Accessed 24 Mar. 2026.</p>
+        <p>Korb, Kevin B. “IBM Develops the FORTRAN Computer Language.” <em>Salem Press Encyclopedia</em>, Jan. 2023. <em>EBSCOhost</em>.</p>
+        <p>Mannikko, Nancy Farm. “Hopper Invents the Computer Language COBOL.” <em>Salem Press Encyclopedia</em>, Jan. 2023. <em>EBSCOhost</em>.</p>
+        <p>Mozilla. “JavaScript Technologies Overview.” <em>MDN Web Docs</em>. Accessed 24 Mar. 2026.</p>
+        <p>Python Software Foundation. <em>Python 3 Documentation</em>. Accessed 24 Mar. 2026.</p>
+        <p>Rust Project Developers. “Announcing Rust 1.0.” <em>The Rust Blog</em>, 15 May 2015.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
