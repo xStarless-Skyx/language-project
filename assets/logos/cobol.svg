@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="COBOL">
+  <rect width="128" height="128" rx="24" fill="#005CA5"/>
+  <rect x="12" y="12" width="104" height="104" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2"/>
+  <text x="64" y="74" text-anchor="middle" font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" letter-spacing="2">COBOL</text>
+</svg>

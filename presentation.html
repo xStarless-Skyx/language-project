@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multigenre Project Presentation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Contemporary Literature Final</p>
+      <h1>How Programming Languages Have Evolved Over Time to Shape Modern Software Development</h1>
+      
+      <p class="subtitle">Gabriel Grundy</p>
+      <a class="cta" id="start-timeline" href="#timeline">Start Presentation</a>
+    </div>
+  </header>
+
+  <nav class="top-nav">
+    <a href="#visual-1">Visual 1</a>
+    <a href="#reflection-1">Reflection 1</a>
+    <a href="#visual-2">Visual 2</a>
+    <a href="#reflection-2">Reflection 2</a>
+    <a href="#conclusion">Conclusion</a>
+  </nav>
+
+  <button id="next-section" class="next-btn is-hidden" type="button" aria-label="Next section">
+    Next
+  </button>
+
+  <main id="timeline" class="timeline">
+    <section id="visual-1" class="card program-card" data-theme="python">
+      <span class="slide-kicker">Visual Connection 1</span>
+      <div class="card-header">
+        <span class="year">1991</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/python.svg" alt="Python logo" />
+          <h2>Python</h2>
+        </div>
+      </div>
+      <p>
+        Python made software development more readable and productive, which helped it grow
+        in education, automation, data science, and everyday programming.
+      </p>
+      <p class="inventor">Inventor: Guido van Rossum.</p>
+      <div class="demo-inputs">
+        <label for="python-input-presentation">Customer Reviews
+          <textarea id="python-input-presentation" rows="5">Great battery life. Great screen. Battery lasted all day and the screen is bright.</textarea>
+        </label>
+        <button id="run-python-presentation" type="button">Run Python Demo</button>
+      </div>
+      <div class="demo-grid">
+        <div class="panel">
+          <h3>Sample Python Code</h3>
+          <pre id="python-code-presentation" class="code big-code"></pre>
+        </div>
+        <div class="panel">
+          <h3>Output</h3>
+          <pre id="python-output-presentation" class="output big-output"></pre>
+        </div>
+      </div>
+  
+    </section>
+
+    <section id="reflection-1" class="card reflection-card" data-theme="python">
+      <span class="slide-kicker">Reflection 1</span>
+      <div class="card-header">
+        <span class="year">Reflection</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/python.svg" alt="Python logo" />
+          <h2>Python Reflection</h2>
+        </div>
+      </div>
+      <p class="reflection-text">
+        I chose Python because it shows how programming languages changed over time by becoming more readable,
+        flexible, and accessible. Python built on ideas from earlier languages, but it made coding easier for
+        more people to learn and use. That change affected modern software development by speeding up tasks like
+        automation, data analysis, and scripting. The hardest part was turning that larger historical idea into
+        a simple classroom example, but it helped me explain how language evolution shapes the technology we use now.
+      </p>
+     
+    </section>
+
+    <section id="visual-2" class="card program-card" data-theme="javascript">
+      <span class="slide-kicker">Visual Connection 2</span>
+      <div class="card-header">
+        <span class="year">1995</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/javascript-logo.png" alt="JavaScript logo" />
+          <h2>JavaScript</h2>
+        </div>
+      </div>
+      <p>
+        JavaScript turned the web into an interactive software platform by powering dynamic
+        changes directly inside the browser.
+      </p>
+      <p class="inventor">Inventor: Brendan Eich.</p>
+      <div class="demo-inputs">
+        <label for="js-ticket-slider-presentation">Movie Tickets ($12 each)</label>
+        <div class="slider-wrap">
+          <input id="js-ticket-slider-presentation" type="range" min="0" max="20" value="0" step="1" />
+          <div class="slider-meta">
+            <span>Tickets: <strong id="js-counter-presentation">0</strong></span>
+            <span>Live total: <strong id="js-live-total-presentation">--</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="demo-grid">
+        <div class="panel">
+          <h3>Sample JavaScript Code</h3>
+          <pre id="javascript-code-presentation" class="code big-code"></pre>
+        </div>
+        <div class="panel">
+          <h3>Output</h3>
+          <pre id="javascript-output-presentation" class="output big-output"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection-2" class="card reflection-card" data-theme="javascript">
+      <span class="slide-kicker">Reflection 2</span>
+      <div class="card-header">
+        <span class="year">Reflection</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/javascript-logo.png" alt="JavaScript logo" />
+          <h2>JavaScript Reflection</h2>
+        </div>
+      </div>
+      <p class="reflection-text">
+        JavaScript helped me show another stage in the development of programming languages. Earlier languages were
+        often focused on calculations, records, or system processes, but JavaScript changed software development by
+        making websites interactive in real time. That shift had a huge effect on modern software because it helped
+        turn the internet into a place where users could click, shop, communicate, and interact instantly. This made
+        it clear that as languages changed over time, they also changed the way people experience technology.
+      </p>
+    </section>
+
+    <section id="conclusion" class="card" data-theme="analysis">
+      <span class="slide-kicker">Conclusion</span>
+      <div class="card-header">
+        <span class="year">Takeaway</span>
+        <h2>What This Project Taught Me</h2>
+      </div>
+      <p class="reflection-text">
+        My biggest takeaway from this project is that programming languages did not develop separately. They built
+        on one another over time, with each new language responding to the limits or needs of earlier ones. Looking
+        at Python and JavaScript helped me see how those changes affected modern software development by making coding
+        more readable, more efficient, and more interactive for both programmers and users.
+      </p>
+    </section>
+  </main>
+
+  <script src="presentation.js"></script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +11,7 @@
     <div class="hero-inner">
       <p class="eyebrow">Spring 2026 Multigenre Research Project</p>
       <h1>How Programming Languages Shaped Modern Software Development</h1>
-      <p class="subtitle">
-        A timeline of seven programming languages, what each one changed,
-        and a simple demo showing the kind of work it made possible.
-      </p>
+      <p class="subtitle">A timeline of seven programming languages, what each one changed, and a simple demo showing the kind of work it made possible.</p>
       <a class="cta" id="start-timeline" href="#timeline">Start the Timeline</a>
     </div>
   </header>
@@ -28,6 +24,7 @@
     <a href="#python">Python</a>
     <a href="#javascript">JavaScript</a>
     <a href="#rust">Rust</a>
+    <a href="#conclusion">Conclusion</a>
     <a href="#works-cited">Works Cited</a>
   </nav>
 
@@ -36,27 +33,72 @@
   </button>
 
   <main id="timeline" class="timeline">
-    <section id="fortran" class="card">
+    <section id="introductory-letter" class="card intro-card" data-theme="analysis">
+      <span class="slide-kicker">Introductory Letter</span>
+      <div class="card-header">
+        <span class="year">Introduction</span>
+        <h2>Introductory Letter</h2>
+      </div>
+      <p class="reflection-text">
+        Have you ever wonder how programming languages evolved? Where they started out? How they got to where they are now? This question matters because the software people use every day did not appear all at once. It developed as new languages introduced new capabilities, improved speed, increased accessibility, reduced computing demands, and made new kinds of applications possible. To create this project, I researched major programming languages from different time periods, selected examples that showed their unique impact, and then combined explanations, reflections, visuals, and demonstrations to show how each language contributed to the growth of modern software.
+      </p>
+    </section>
+
+    <section id="table-of-contents" class="card intro-card" data-theme="analysis">
+      <span class="slide-kicker">Table of Contents</span>
+      <div class="card-header">
+        <span class="year">Overview</span>
+        <h2>Table of Contents</h2>
+      </div>
+      <div class="toc-grid">
+        <div class="panel">
+          <h3>Genres</h3>
+          <ol class="toc-list">
+            <li>FORTRAN</li>
+            <li>LISP</li>
+            <li>COBOL</li>
+            <li>C</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Rust</li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h3>Closing Slides</h3>
+          <ul class="toc-list plain-list">
+            <li>Conclusion</li>
+            <li>Works Cited</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="fortran" class="card program-card" data-theme="fortran">
+      <span class="slide-kicker">Genre 1</span>
       <div class="card-header">
         <span class="year">1957</span>
-        <h2>FORTRAN</h2>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/fortran.svg" alt="FORTRAN logo" />
+          <h2>FORTRAN</h2>
+        </div>
       </div>
       <p>
         FORTRAN helped make scientific and mathematical programming more practical by letting
         programmers work with formulas instead of only low-level machine instructions.
       </p>
       <p class="inventor">Inventor: John Backus (IBM).</p>
-
+      <p class="reflection-text">
+        Program Focus: Science and engineering formulas for fast, reliable calculations.
+      </p>
       <div class="demo-inputs">
-        <label>Mass (kg)
+        <label for="fortran-mass">Rocket Mass (kg)
           <input id="fortran-mass" type="number" value="10" />
         </label>
-        <label>Acceleration (m/s²)
-          <input id="fortran-accel" type="number" value="3" />
+        <label for="fortran-speed">Rocket Speed (m/s)
+          <input id="fortran-speed" type="number" value="12" />
         </label>
-        <button onclick="runFortranDemo()">Run Demo</button>
+        <button onclick="runFortranDemo()" type="button">Run Demo</button>
       </div>
-
       <div class="demo-grid">
         <div class="panel">
           <h3>Sample FORTRAN Code</h3>
@@ -69,24 +111,70 @@
       </div>
     </section>
 
-    <section id="lisp" class="card">
+    <section id="fortran-connection" class="card visual-card" data-theme="fortran">
+      <span class="slide-kicker">Visual Evidence</span>
+      <div class="card-header">
+        <span class="year">Evidence</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/fortran.svg" alt="FORTRAN logo" />
+          <h2>FORTRAN Visual Evidence</h2>
+        </div>
+      </div>
+      <div class="visual-layout">
+        <figure class="visual-figure">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Human%20computer%20with%20IBM%20704%20in%201959.jpg"
+            alt="Human computer working with an IBM 704 in 1959"
+            loading="lazy"
+          />
+        </figure>
+        <div class="visual-copy">
+          <p class="visual-text">
+            A real example of FORTRAN's impact is its use in scientific and engineering calculations on early IBM
+            systems such as the IBM 704. FORTRAN made it easier to write formula-based programs for research,
+            physics, and other technical fields, which is why it became so important in the early history of software.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fortran-reflection" class="card reflection-card" data-theme="fortran">
+      <span class="slide-kicker">FORTRAN Reflection</span>
+      <div class="card-header">
+        <span class="year">Reflection</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/fortran.svg" alt="FORTRAN logo" />
+          <h2>FORTRAN Reflection</h2>
+        </div>
+      </div>
+      <p class="reflection-text">
+        I chose FORTRAN because it represents probably the earliest big shift in programming history. It was one of the first programming languages and it showed that computers could be used for more than machine-level instruction. It let programmers write actual mathematical formulas for the computer in a much more readable way That mattered because it opened the door for modern scientific and technical software. Looking at FORTRAN helped me understand how the first major languages made programming more useful for real-world problem solving.
+      </p>
+    </section>
+
+    <section id="lisp" class="card program-card" data-theme="lisp">
+      <span class="slide-kicker">Genre 2</span>
       <div class="card-header">
         <span class="year">1958</span>
-        <h2>LISP</h2>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/lisp.svg" alt="LISP logo" />
+          <h2>LISP</h2>
+        </div>
       </div>
       <p>
         LISP shaped symbolic processing and artificial intelligence by representing operations
         as expressions built from lists.
       </p>
       <p class="inventor">Inventor: John McCarthy (MIT).</p>
-
+      <p class="reflection-text">
+        Program Focus: List processing: breaking information into meaningful pieces.
+      </p>
       <div class="demo-inputs">
-        <label>Expression
-          <input id="lisp-input" type="text" value="(+ 2 3 4)" />
+        <label for="lisp-input">Task List (comma separated)
+          <input id="lisp-input" type="text" value="buy milk, call mom, finish homework" />
         </label>
-        <button onclick="runLispDemo()">Run Demo</button>
+        <button onclick="runLispDemo()" type="button">Run Demo</button>
       </div>
-
       <div class="demo-grid">
         <div class="panel">
           <h3>Sample LISP Code</h3>
@@ -99,27 +187,73 @@
       </div>
     </section>
 
-    <section id="cobol" class="card">
+    <section id="lisp-connection" class="card visual-card" data-theme="lisp">
+      <span class="slide-kicker">Visual Evidence</span>
+      <div class="card-header">
+        <span class="year">Evidence</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/lisp.svg" alt="LISP logo" />
+          <h2>LISP Visual Evidence</h2>
+        </div>
+      </div>
+      <div class="visual-layout">
+        <figure class="visual-figure">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/LISP_machine.jpg"
+            alt="LISP machine at the MIT Museum"
+            loading="lazy"
+          />
+        </figure>
+        <div class="visual-copy">
+          <p class="visual-text">
+            A real example of LISP's influence can be seen in early artificial intelligence research, including
+            programs such as SHRDLU that worked with symbolic language and reasoning. LISP became strongly associated
+            with AI because its list-based structure made it useful for representing ideas instead of just numbers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="lisp-reflection" class="card reflection-card" data-theme="lisp">
+      <span class="slide-kicker">LISP Reflection</span>
+      <div class="card-header">
+        <span class="year">Reflection</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/lisp.svg" alt="LISP logo" />
+          <h2>LISP Reflection</h2>
+        </div>
+      </div>
+      <p class="reflection-text">
+       I included LISP because it shows a different path in the evolution of programming languages. While some languages focused on calculations or business tasks, LISP became important for symbolic thinking and artificial intelligence. LISP's design made it much easier to work with ideas, expressions, and most importantly lists of information. Studying LISP helped me see that programming languages did not all develop for the same reason; each one shaped modern software by solving a different kind of problem.
+      </p>
+    </section>
+
+    <section id="cobol" class="card program-card" data-theme="cobol">
+      <span class="slide-kicker">Genre 3</span>
       <div class="card-header">
         <span class="year">1959</span>
-        <h2>COBOL</h2>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/cobol.svg" alt="COBOL logo" />
+          <h2>COBOL</h2>
+        </div>
       </div>
       <p>
         COBOL helped bring computing into business by using a readable, English-like style
         for records, payroll, and reports.
       </p>
       <p class="inventor">Inventor: Grace Hopper and the CODASYL committee.</p>
-
+      <p class="reflection-text">
+        Program Focus: Business records, payroll, and readable report-oriented workflows.
+      </p>
       <div class="demo-inputs">
-        <label>Hours Worked
+        <label for="cobol-hours">Hours Worked
           <input id="cobol-hours" type="number" value="40" />
         </label>
-        <label>Hourly Rate
+        <label for="cobol-rate">Hourly Rate
           <input id="cobol-rate" type="number" value="18.5" step="0.01" />
         </label>
-        <button onclick="runCobolDemo()">Run Demo</button>
+        <button onclick="runCobolDemo()" type="button">Run Demo</button>
       </div>
-
       <div class="demo-grid">
         <div class="panel">
           <h3>Sample COBOL Code</h3>
@@ -132,23 +266,69 @@
       </div>
     </section>
 
-    <section id="c" class="card">
+    <section id="cobol-connection" class="card visual-card" data-theme="cobol">
+      <span class="slide-kicker">Visual Evidence</span>
+      <div class="card-header">
+        <span class="year">Evidence</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/cobol.svg" alt="COBOL logo" />
+          <h2>COBOL Visual Evidence</h2>
+        </div>
+      </div>
+      <div class="visual-layout">
+        <figure class="visual-figure">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Punch-card-cobol.jpg"
+            alt="Actual punch card containing a line of COBOL programming"
+            loading="lazy"
+          />
+        </figure>
+        <div class="visual-copy">
+          <p class="visual-text">
+            A real example of COBOL's importance is its long use in banking, payroll, and government record systems.
+            COBOL was designed for large business-style reports and data processing, which is why it became closely
+            connected to the everyday administrative work of major institutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cobol-reflection" class="card reflection-card" data-theme="cobol">
+      <span class="slide-kicker">COBOL Reflection</span>
+      <div class="card-header">
+        <span class="year">Reflection</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/cobol.svg" alt="COBOL logo" />
+          <h2>COBOL Reflection</h2>
+        </div>
+      </div>
+      <p class="reflection-text">
+        I chose COBOL because it showed how programming became a large part of the business world. COBOL once again made code even more readable and closer to everyday language. That shift helped organizations use computers for payroll, reports, and records. That was an important step in software development because it proved programming was not only for scientists or engineers. COBOL helped me understand how languages evolved to meet practical needs in workplaces and large systems people still depend on today.
+      </p>
+    </section>
+
+    <section id="c" class="card program-card" data-theme="c">
+      <span class="slide-kicker">Genre 4</span>
       <div class="card-header">
         <span class="year">1972</span>
-        <h2>C</h2>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/c.svg" alt="C logo" />
+          <h2>C</h2>
+        </div>
       </div>
       <p>
         C shaped systems programming by combining speed, portability, and low-level control.
       </p>
       <p class="inventor">Inventor: Dennis Ritchie (Bell Labs).</p>
-
+      <p class="reflection-text">
+        Program Focus: Very fast processing for sorting and handling large amounts of data.
+      </p>
       <div class="demo-inputs">
-        <label>Numbers (comma separated)
-          <input id="c-input" type="text" value="9, 3, 7, 1, 5" />
+        <label for="c-input">Race Times in Seconds (comma separated)
+          <input id="c-input" type="text" value="12.4, 10.9, 11.3, 13.1, 10.6" />
         </label>
-        <button onclick="runCDemo()">Run Demo</button>
+        <button onclick="runCDemo()" type="button">Run Demo</button>
       </div>
-
       <div class="demo-grid">
         <div class="panel">
           <h3>Sample C Code</h3>
@@ -161,24 +341,74 @@
       </div>
     </section>
 
-    <section id="python" class="card">
+    <section id="c-connection" class="card visual-card" data-theme="c">
+      <span class="slide-kicker">Visual Evidence</span>
+      <div class="card-header">
+        <span class="year">Evidence</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/c.svg" alt="C logo" />
+          <h2>C Visual Evidence</h2>
+        </div>
+      </div>
+      <div class="visual-layout">
+        <figure class="visual-figure">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Bell%20Labs%20UNIX%20Guides.jpg"
+            alt="Bell Labs UNIX starter guides"
+            loading="lazy"
+          />
+        </figure>
+        <div class="visual-copy">
+          <p class="visual-text">
+            A real example of C's impact is UNIX, which became one of the most influential operating systems in
+            computing history. Because C was fast and portable, it helped shape system software and influenced many
+            later languages used in modern development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="c-reflection" class="card reflection-card" data-theme="c">
+      <span class="slide-kicker">C Reflection</span>
+      <div class="card-header">
+        <span class="year">Reflection</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/c.svg" alt="C logo" />
+          <h2>C Reflection</h2>
+        </div>
+      </div>
+      <p class="reflection-text">
+        I used C because it represents a major turning point toward fast and powerful system programming. C gave
+        programmers more control over hardware while still being portable enough to influence many later languages.
+        That balance of speed and flexibility helped shape operating systems and many other tools that modern software
+        depends on. Thinking about C made it clear to me that language evolution is also about performance and control,
+        not just readability.
+      </p>
+    </section>
+
+    <section id="python" class="card program-card" data-theme="python">
+      <span class="slide-kicker">Genre 5</span>
       <div class="card-header">
         <span class="year">1991</span>
-        <h2>Python</h2>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/python.svg" alt="Python logo" />
+          <h2>Python</h2>
+        </div>
       </div>
       <p>
         Python made software development more readable and productive, which helped it grow
         in education, automation, data science, and everyday programming.
       </p>
       <p class="inventor">Inventor: Guido van Rossum.</p>
-
+      <p class="reflection-text">
+        Program Focus: Readable scripting for quick automation and text/data summaries.
+      </p>
       <div class="demo-inputs">
-        <label>Paste Text
-          <textarea id="python-input" rows="5">Python makes code easier to read and write.</textarea>
+        <label for="python-input">Customer Reviews
+          <textarea id="python-input" rows="5">Great battery life. Great screen. Battery lasted all day and the screen is bright.</textarea>
         </label>
-        <button onclick="runPythonDemo()">Run Demo</button>
+        <button onclick="runPythonDemo()" type="button">Run Demo</button>
       </div>
-
       <div class="demo-grid">
         <div class="panel">
           <h3>Sample Python Code</h3>
@@ -191,25 +421,74 @@
       </div>
     </section>
 
-    <section id="javascript" class="card">
+    <section id="python-connection" class="card visual-card" data-theme="python">
+      <span class="slide-kicker">Visual Evidence</span>
+      <div class="card-header">
+        <span class="year">Evidence</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/python.svg" alt="Python logo" />
+          <h2>Python Visual Evidence</h2>
+        </div>
+      </div>
+      <div class="visual-layout">
+        <figure class="visual-figure">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/PyScripter%20IDE.png"
+            alt="Screenshot of the PyScripter Python IDE"
+            loading="lazy"
+          />
+        </figure>
+        <div class="visual-copy">
+          <p class="visual-text">
+            A real example of Python's influence is its widespread use in automation and data analysis. Python became
+            especially important in classrooms, scripting tasks, and data-focused work because its readable style made
+            complex tasks easier for more people to learn and complete.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="python-reflection" class="card reflection-card" data-theme="python">
+      <span class="slide-kicker">Python Reflection</span>
+      <div class="card-header">
+        <span class="year">Reflection</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/python.svg" alt="Python logo" />
+          <h2>Python Reflection</h2>
+        </div>
+      </div>
+      <p class="reflection-text">
+        I chose Python because it's another great example of how programming languages have changed over time. Python was the first coding language I learned and for good reason. Python was built on ideas from earlier languages, most importantly it made coding easier for more people to learn and use. Python is arguably one of the easiest languages to learn.  That fact affected modern software development by making it more accessible for people. Python is one of the most widely used coding languages to this day.
+      </p>
+    </section>
+
+    <section id="javascript" class="card program-card" data-theme="javascript">
+      <span class="slide-kicker">Genre 6</span>
       <div class="card-header">
         <span class="year">1995</span>
-        <h2>JavaScript</h2>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/javascript-logo.png" alt="JavaScript logo" />
+          <h2>JavaScript</h2>
+        </div>
       </div>
       <p>
         JavaScript turned the web into an interactive software platform by powering dynamic
         changes directly inside the browser.
       </p>
       <p class="inventor">Inventor: Brendan Eich.</p>
-
+      <p class="reflection-text">
+        Program Focus: Live browser interactivity that updates instantly as users click.
+      </p>
       <div class="demo-inputs">
-        <div class="counter-wrap">
-          <button onclick="changeJsCounter(-1)">-</button>
-          <span id="js-counter">0</span>
-          <button onclick="changeJsCounter(1)">+</button>
+        <label for="js-ticket-slider">Movie Tickets ($12 each)</label>
+        <div class="slider-wrap">
+          <input id="js-ticket-slider" type="range" min="0" max="20" value="2" step="1" />
+          <div class="slider-meta">
+            <span>Tickets: <strong id="js-counter">2</strong></span>
+            <span>Live total: <strong id="js-live-total">$24.00</strong></span>
+          </div>
         </div>
       </div>
-
       <div class="demo-grid">
         <div class="panel">
           <h3>Sample JavaScript Code</h3>
@@ -222,24 +501,71 @@
       </div>
     </section>
 
-    <section id="rust" class="card">
+    <section id="javascript-connection" class="card visual-card" data-theme="javascript">
+      <span class="slide-kicker">Visual Evidence</span>
+      <div class="card-header">
+        <span class="year">Evidence</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/javascript-logo.png" alt="JavaScript logo" />
+          <h2>JavaScript Visual Evidence</h2>
+        </div>
+      </div>
+      <div class="visual-layout">
+        <figure class="visual-figure">
+          <img
+            src="assets/visuals/google-maps-frontend.png"
+            alt="Google Maps frontend screenshot showing interactive map controls and live location features"
+            loading="lazy"
+          />
+        </figure>
+        <div class="visual-copy">
+          <p class="visual-text">
+            This Google Maps screenshot is a stronger example of JavaScript's impact on the frontend because it shows
+            the kinds of features users actually interact with: searchable maps, clickable category buttons, live
+            updates, zoom controls, and location tools. JavaScript helps power these dynamic website features, which
+            is why it became such an important language in modern interactive web development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="javascript-reflection" class="card reflection-card" data-theme="javascript">
+      <span class="slide-kicker">JavaScript Reflection</span>
+      <div class="card-header">
+        <span class="year">Reflection</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/javascript-logo.png" alt="JavaScript logo" />
+          <h2>JavaScript Reflection</h2>
+        </div>
+      </div>
+      <p class="reflection-text">
+        JavaScript helped me show another stage in the development of programming languages. Earlier programming languages were often focused on making calculations, storing records, or tracking system processes, but JavaScript changed software development by making websites interactive in real time. That shift had a huge effect on modern software because it helped turn the internet from static web pages to dynamic interactive sites. JavaScript's influence is everywhere on the web, as it is arguable the #1 most used programming language in the world. 
+      </p>
+    </section>
+
+    <section id="rust" class="card program-card" data-theme="rust">
+      <span class="slide-kicker">Genre 7</span>
       <div class="card-header">
         <span class="year">2015</span>
-        <h2>Rust</h2>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/rust.svg" alt="Rust logo" />
+          <h2>Rust</h2>
+        </div>
       </div>
       <p>
         Rust helped modern software focus on both speed and safety, especially in systems
         programming and WebAssembly-based development.
       </p>
       <p class="inventor">Inventor: Graydon Hoare.</p>
-
+      <p class="reflection-text">
+        Program Focus: Safe-by-default performance that catches risky values early.
+      </p>
       <div class="demo-inputs">
-        <label>How many steps?
-          <input id="rust-steps" type="number" value="5" min="1" max="20" />
+        <label for="rust-steps">Packages To Ship Today
+          <input id="rust-steps" type="number" value="12" min="1" max="500" />
         </label>
-        <button onclick="runRustDemo()">Run Demo</button>
+        <button onclick="runRustDemo()" type="button">Run Demo</button>
       </div>
-
       <div class="demo-grid">
         <div class="panel">
           <h3>Sample Rust Code</h3>
@@ -252,7 +578,66 @@
       </div>
     </section>
 
-    <section id="works-cited" class="card">
+    <section id="rust-connection" class="card visual-card" data-theme="rust">
+      <span class="slide-kicker">Visual Evidence</span>
+      <div class="card-header">
+        <span class="year">Evidence</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/rust.svg" alt="Rust logo" />
+          <h2>Rust Visual Evidence</h2>
+        </div>
+      </div>
+      <div class="visual-layout">
+        <figure class="visual-figure">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Rustc%20with%20cargo%20screenshot.png"
+            alt="Screenshot of Rust with cargo tooling"
+            loading="lazy"
+          />
+        </figure>
+        <div class="visual-copy">
+          <p class="visual-text">
+            A real example of Rust's importance is its use in memory-safe systems programming, especially in projects
+            where developers want strong performance without the same level of risk for memory-related bugs. Rust is a
+            modern response to long-standing problems in low-level software development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rust-reflection" class="card reflection-card" data-theme="rust">
+      <span class="slide-kicker">Rust Reflection</span>
+      <div class="card-header">
+        <span class="year">Reflection</span>
+        <div class="language-title">
+          <img class="lang-logo" src="assets/logos/rust.svg" alt="Rust logo" />
+          <h2>Rust Reflection</h2>
+        </div>
+      </div>
+      <p class="reflection-text">
+        I included Rust because it shows what modern programming languages are trying to improve today. Earlier
+        languages made huge progress in speed, structure, and usability, but Rust focuses strongly on safety along
+        with performance. That matters in modern software because developers now need programs that are fast but also
+        less likely to fail because of memory errors or unsafe behavior. Rust helped me see that language evolution is
+        still happening, and newer languages continue responding to the weaknesses of older ones.
+      </p>
+    </section>
+
+    <section id="conclusion" class="card" data-theme="analysis">
+      <span class="slide-kicker">Conclusion</span>
+      <div class="card-header">
+        <span class="year">Takeaway</span>
+        <h2>Conclusion</h2>
+      </div>
+      <p class="reflection-text">
+        Looking across these languages shows that software development changed step by step. Each language answered a different need,
+        from scientific calculation and business records to system speed, readability, web interactivity, and safer modern performance.
+        Together, they show how programming languages shaped the way developers build the software people use today.
+      </p>
+    </section>
+
+    <section id="works-cited" class="card" data-theme="library">
+      <span class="slide-kicker">Sources</span>
       <div class="card-header">
         <span class="year">Sources</span>
         <h2>Works Cited</h2>
